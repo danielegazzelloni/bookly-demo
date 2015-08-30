@@ -1,5 +1,5 @@
 # bookly-demo
-Bookly: a never-finished AngularJS demo interface for a never-landed enterprise project. 
+A never-finished AngularJS demo interface for a never-landed enterprise project. 
 
 Node.js with a basic Google Drive support as back-end.
 
