@@ -1,7 +1,7 @@
 {
   "name": "Bookly",
   "version": "0.0.2",
-  "description": "Bookly: a never-finished AngularJS demo interface for a never-landed enterprise project.",
+  "description": "A never-finished AngularJS demo interface for a never-landed enterprise project.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
