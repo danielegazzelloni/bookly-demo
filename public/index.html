@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Bookly front-end.
+-->
+<html lang="en-us" ng-app="BooklyFE">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Daniele Gazzelloni / daniele@danielegazzelloni.com">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/flag-icon.min.css" />
+        <link rel="stylesheet" href="css/tree-control.css" />
+        <link rel="stylesheet" href="css/tree-control-attribute.css" />
+        <link rel="stylesheet" href="css/treeGrid.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-pageslide-directive.js"></script>
+        <script src="js/angular-tree-control.js"></script>
+        <script src="js/tree-grid-directive.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js"></script>
+
+        <title>Bookly</title>
+    </head>
+    <body>
+
+        <!--------- MAIN SECTION: top navbar + main content window --------->
+        <section ng-switch on="topTab" ng-controller="topTabsController">
+            <div ng-include="'views/top-navbar.html'"></div>
+
+            <div ng-switch on="topTab">
+                <!-- jobs tab -->
+                <section ng-switch-when="jobs" ng-controller="jobsController">
+                    <div ng-include="'views/jobs.html'"></div>
+                </section>
+                <!-- instant messaging tab -->
+                <section ng-switch-when="im">
+                    <div ng-include="'views/im.html'"></div>
+                </section>
+                <!-- products tab -->
+                <section ng-switch-when="products" ng-controller="productsController">
+                    <div ng-include="'views/products.html'"></div>
+                </section>
+                <!-- docs tab -->
+                <section ng-switch-when="docs" ng-controller="docsController">
+                    <div ng-include="'views/docs.html'"></div>
+                </section>
+                <!-- statistics tab -->
+                <section ng-switch-when="statistics" ng-controller="statisticsController">
+                    <div ng-include="'views/statistics.html'"></div>
+                </section>
+            </div>
+        </section>
+        
+    </body>
+</html>

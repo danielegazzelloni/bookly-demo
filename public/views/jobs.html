@@ -1,0 +1,39 @@
+<!----------- LEFT SEARCHBAR ----------->
+<div ng-include="'views/jobs/left-searchbar.html'"></div>
+
+<!----------- JOBS: MAIN CONTENT ----------->
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Job</th>
+                <th>Job Date</th>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Origin Language</th>
+                <th>Target Language</th>
+                <th>Ver.</th>
+                <th>Status</th>
+                <th>TM code</th>
+                <th>TM ver.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="job in jobs" ng-class="{'info':$index == selectedRow}" ng-click="setClickedRow($index)">
+                <td>{{job.jobID}}</td>
+                <td>{{job.jobDate}}</td>
+                <td>{{job.product}}</td>
+                <td>{{job.category}}</td>
+                <td><span class="flag-icon flag-icon-{{job.originLang}}"></span></td>
+                <td><span class="flag-icon flag-icon-{{job.targetLang}}"></span></td>
+                <td>{{job.ver}}</td>
+                <td>{{job.status}}</td>
+                <td>{{job.tmCode}}</td>
+                <td>{{job.tmVer}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!----------- BOTTOM NAVBAR ----------->
+<div ng-include="'views/jobs/bottom-navbar.html'"></div>

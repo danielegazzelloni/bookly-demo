@@ -1,0 +1,26 @@
+{
+  "name": "Bookly",
+  "version": "0.0.2",
+  "description": "Bookly: a never-finished AngularJS demo interface for a never-landed enterprise project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielegazzelloni/bookly-demo.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielegazzelloni/bookly-demo/issues"
+  },
+  "homepage": "https://github.com/danielegazzelloni/bookly-demo#readme",
+  "author": "Daniele Gazzelloni <daniele@danielegazzelloni.com>",
+  "dependencies": {
+    "express": "4.*",
+    "googleapis": "*",
+    "body-parser": "*",
+    "multer": "*"
+  }
+}

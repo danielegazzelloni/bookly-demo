@@ -1,0 +1,79 @@
+
+/******* GENERAL *******/
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 8em;
+    padding-bottom: 5em;
+    height: 100%;
+}
+
+
+
+
+/******* NAVBARS *******/
+.navbar-right {
+    margin: 0.5em;
+}
+
+
+
+
+/******* SEARCH BAR *******/
+.rotate {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.searchbar, .searchbar-panel {
+    padding: 1em;
+    padding-right: 5px;
+    margin-top: 1em;
+    margin-left: -5px;
+    width: 3em;
+    height: 35em;
+}
+
+.searchbar {
+    position: relative;
+    z-index: 1001; // Pageslide use a 1000 value z-index for the slider div
+}
+
+.searchbar p {
+    line-height: 2em;
+    padding-top: 0.5em;
+}
+
+.searchbar-panel {
+    width: 500px;
+    max-height: 35em;
+    margin-left: 0em;
+    margin-top: 9em;
+}
+
+.searchbar-content {
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+td, th {
+    text-align:center;
+}
+
+
+
+
+/******* PANELS *******/
+
+.panel-tree {
+    float: left;
+    width: 40%;
+}
+.panel-graph {
+    float: right;
+    width: 60%;
+}

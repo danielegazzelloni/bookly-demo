@@ -1,0 +1,70 @@
+<!----------- TOP NAVBAR: START ----------->
+<nav class="navbar navbar-inverse navbar-fixed-top" style="border: 0px">
+    <div class="container">
+        <!-- Brand and logo -->
+        <div class="navbar-header nav-justified">
+            <div class="navbar-brand">
+                <span class="glyphicon glyphicon-star small" aria-hidden="true"></span>
+                Bookly v0.0.2
+            </div>
+            <!-- Logout and profile selector -->
+            <div class="navbar-right navbar-static-top">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+                        Operator 1
+                    </button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Operator 1</a></li>
+                        <li><a href="#">Operator 2</a></li>
+                    </ul>
+                </div>
+                
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabbed navigation -->
+        <ul class="nav navbar-inverse nav-tabs">
+            <li ng-class="{active: topTab == 'jobs'}">
+                <a href="#" ng-click="setTab('jobs')">
+                    <span class="glyphicon glyphicon-cog small" aria-hidden="true"></span>
+                    Jobs
+                </a>
+            </li>
+            <li ng-class="{active: topTab == 'im'}">
+                <a href="#" ng-click="setTab('im')">
+                    <span class="glyphicon glyphicon-envelope small" aria-hidden="true"></span>
+                    Instant Messaging
+                </a>
+            </li>
+            <li ng-class="{active: topTab == 'products'}">
+                <a href="#" ng-click="setTab('products')">
+                    <span class="glyphicon glyphicon-briefcase small" aria-hidden="true"></span>
+                    Products
+                </a>
+            </li>
+            <li ng-class="{active: topTab == 'docs'}">
+                <a href="#" ng-click="setTab('docs')">
+                    <span class="glyphicon glyphicon-duplicate small" aria-hidden="true"></span>
+                    Docs
+                </a>
+            </li>
+            <li ng-class="{active: topTab == 'statistics'}">
+                <a href="#" ng-click="setTab('statistics')">
+                    <span class="glyphicon glyphicon-stats small" aria-hidden="true"></span>
+                    Statistics
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!----------- TOP NAVBAR: END ----------->

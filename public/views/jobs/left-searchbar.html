@@ -1,0 +1,108 @@
+<section ng-controller="leftSearchbarController">
+    <div class="panel panel-default pull-left searchbar" ng-click="toggleSearchbar()">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"> 
+        </span>&nbsp; 
+        <p class="rotate"><strong>Search</strong></p>
+    </div>
+
+    <div data-pageslide data-ps-open="checked" data-ps-side="left" data-ps-size="660px" data-ps-class="panel panel-default searchbar-panel">
+        <div class="content searchbar-content">
+            <section>
+                <header>
+                    <h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp; Search</h4>
+                </header>
+                
+                <br />
+                
+                <form novalidate class="form-group form-horizontal">
+                    <div class="form-group">
+                        <label for="jobCode" class="control-label col-sm-2">Job:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="jobCode" placeholder="Enter job code" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fromDate" class="control-label col-sm-2">From:</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" id="fromDate" />
+                        </div>
+                        <label for="toDate" class="control-label col-sm-2">To: </label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" id="toDate" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="TM"  class="control-label col-sm-2">TM: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="TM" placeholder="Enter TM" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product"  class="control-label col-sm-2">Product: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="product" placeholder="Enter product name" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category"  class="control-label col-sm-2">Category: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="category" placeholder="Enter product category" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="originLanguage" class="control-label col-sm-2">Original Language:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="originLanguage">
+                                <option></option>
+                            </select>
+                        </div>
+                        <label for="targetLanguage" class="control-label col-sm-2">Target Language: </label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="targetLanguage">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="markets" class="control-label col-sm-2">Markets:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="markets">
+                                <option></option>
+                            </select>
+                        </div>
+                        <label for="status" class="control-label col-sm-2">Status: </label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="status">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <br />
+                    
+                    <div class="form-group pull-right">
+                        <button class="btn btn-default" ng-click="toggleSearchbar()">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            Close
+                        </button>
+                        <button class="btn btn-default">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            Search
+                        </button>
+                        <button class="btn btn-default" ng-click="clearSearchbar()">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            Clear
+                        </button>
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+    </div>
+</section>
