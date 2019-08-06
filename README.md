@@ -21,4 +21,4 @@ Then point your browser to `http://localhost:8081/` for viewing the AngularJS in
 If you would like to try implemented Google APIs you should try to access to `http://localhost:8081:/getFiles`.
 
 ## Live demo
-Point your browser [here](http://www.danielegazzelloni.com/demos/bookly-demo/public/).
+Point your browser [here](http://www.danielegazzelloni.com/demos/bookly-demo).
